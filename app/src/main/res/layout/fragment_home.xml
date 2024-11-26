@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        app:cardCornerRadius="4dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:padding="4dp"
+                android:background="@drawable/btn_back"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/save"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Password generator"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password length"
+                    android:layout_weight="1"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leng"
+                    android:ems="6"
+                    android:textColor="#E91E63"
+                    android:textColorHint="#E91E63"
+                    android:hint="Ex8."/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/warning"
+                android:layout_margin="4dp"
+                android:textColor="#C82B2B"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                >
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/checkLowCas"
+                    android:text="Include Lowercase"
+                    android:buttonTint="#E91E63"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/checkUppCas"
+                    android:text="Include Uppercase"
+                    android:buttonTint="#E91E63"
+
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/checkNum"
+                    android:text="Include numbers"
+                    android:buttonTint="#E91E63"
+
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:layout_marginBottom="5dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/checkSym"
+                    android:text="Include Symbols"
+                    android:buttonTint="#E91E63"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_back"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:padding="4dp"
+                    android:id="@+id/genBtn"
+                    android:text="Generate Password"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/btn_back"
+                    android:layout_marginLeft="6dp"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/reset"
+                    android:text="Reset"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_margin="7dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/result"
+                android:textSize="25sp"/>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>
